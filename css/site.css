@@ -1,0 +1,113 @@
+﻿
+div#main
+{
+  width: 964px;
+  height: 768px;
+  padding: 0 25px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Cordia New;
+  font-size: 34px;
+}
+div#menu-switch
+{
+  float: right;
+  padding-top: 65px;
+}
+div#logo
+{
+  float: left;
+  width: 80px;
+}
+div#header
+{
+  position: fixed;
+  width: 964px;
+  height: 100px;
+  z-index: 2;
+  background-color: White;
+  top: 0px;
+  padding-top: 50px;
+}
+div#images
+{
+  clear: both;
+  margin-top: 170px;
+  padding-bottom: 50px;
+  direction: rtl;
+}
+div#menu
+{
+  position: absolute;
+  top: 73px;
+  z-index: 3;
+  display: none; /*display:none;*/
+  opacity: 0.6;
+}
+ul
+{
+  width: 964px;
+  height: 170px;
+  font-size: 27px;
+  background-color: Gray;
+  color: White;
+  list-style-type: none;
+  padding: 15px 0 0 0;
+  margin: 0;
+  direction: rtl;
+}
+li
+{
+  padding-right: 5px;
+}
+li#contact
+{
+  padding-top: 20px;
+}
+div#spacer
+{
+  height: 59px;
+  padding-top: 18px;
+  padding-left: 24px;
+  cursor: pointer;
+}
+a
+{
+  text-decoration: none;
+  color: White;
+}
+a:hover
+{
+  font-weight: bold;
+}
+#images img:not(:first-child)
+{
+  margin: 100px 0 0 0;
+}
+
+#texts
+{
+  margin: 0 auto;
+  width: 216px;
+  text-align: center;
+  font-size:22px;
+  
+}
+
+#texts span
+{
+  display: block;
+}
+
+#smallLogo
+{
+  display: block;
+  margin: 0 auto;
+  padding-top:300px;
+  width: 383px;
+}
+
+#facebook
+{
+  margin-top: 10px !important;
+}
