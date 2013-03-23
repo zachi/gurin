@@ -1,0 +1,185 @@
+﻿
+body
+{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin:0;
+}
+
+div#main
+{
+  width: 964px;
+  height: 640px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Cordia New;
+  font-size: 34px;
+}
+
+div#menu-switch
+{
+  float: right;
+  padding-top: 65px;
+  height: 35px;
+}
+
+#logo
+{
+  float: left;
+  width: 206px;
+  margin-top:40px;
+  display:none;
+}
+
+.show-menu.commercial #logo, .show-menu.business #logo, .show-menu.residence #logo, .show-menu.contact #logo
+{
+  display:block;
+}
+
+div#header
+{
+  position: fixed;
+  width: 964px;
+  height: 100px;
+  z-index: 2;
+  background-color: White;
+  top: 0px;
+  padding-top: 50px;
+}
+
+div#images
+{
+  clear: both;
+  margin-top: 150px;
+  padding-bottom: 50px;
+  direction: rtl;
+}
+
+div#menu
+{
+  position: absolute;
+  top: 150px;
+  
+  z-index: 3; 
+  display:none;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+
+  
+}
+
+#menu > ul
+{
+  width: 964px; 
+  height: 170px;
+  height: 257px;
+  font-size: 27px;
+  background-color: Gray;
+  color: White;
+  list-style-type: none;
+  padding: 15px 0 0 0;
+  margin: 0;
+  direction: rtl;
+  position:relative;
+
+}
+
+#menu > ul > li
+{
+  padding-right: 5px;
+}
+
+li#contact
+{
+  padding-top: 20px;
+}
+
+#spacer
+{
+  height: 100px;
+  pointer-events:none;
+}
+
+a
+{
+  text-decoration: none;
+  color: White;
+}
+
+a:hover
+{
+  font-weight: bold;
+}
+
+#images img:not(:first-child)
+{
+  margin: 100px 0 0 0;
+}
+
+#texts
+{
+  margin: 0 auto;
+  width: 216px;
+  text-align: center;
+  font-size: 22px;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+#texts span
+{
+  display: block;
+}
+
+#smallLogo
+{
+  display: block;
+  margin: 0 auto;
+  padding-top: 300px;
+  width: 383px;
+}
+
+#facebook
+{
+  margin-top: 10px !important;
+}
+
+img
+{
+  border: none;
+}
+
+.childs-category
+{
+  list-style-type: none;
+  margin-right: 5px;
+  display:none;
+}
+
+#contact
+{
+  position:absolute;
+  top:218px;
+}
+
+.parent-categoty>span:hover
+{
+  font-weight:bold;
+  cursor:pointer;
+  cursor:hand;
+}
+
+.splash
+{
+  display:block;
+  width:756px;
+  margin: 0 auto;
+}
