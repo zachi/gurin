@@ -13,7 +13,7 @@ body
 div#main
 {
   width: 964px;
-  height: 640px;
+  /*height: 640px;*/
   margin: 0 auto;
   position: relative;
   font-family: Cordia New;

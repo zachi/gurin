@@ -1,8 +1,10 @@
 $(function () {
   (function () {
 
-    $('#menu-switch').hover(showMenu, null);
-    $('#header').hover(null, hideMenu);
+    function bindEvents() {
+      $('#menu-switch').on('mouseover', showMenu);
+      $('#header').hover(null, hideMenu);
+    }
 
     function hideMenu() {
       $('#menu').hide();
@@ -14,18 +16,39 @@ $(function () {
       $('body').addClass('show-menu')
     }
 
-    var urlParts = document.location.href.split('/');
-    var category = urlParts[urlParts.length - 1].toLowerCase();
-    $('body').addClass(category);
+    function toggleMenu() {
+      if ($('body').hasClass('show-menu'))
+        hideMenu();
+      else
+        showMenu();
+    }
 
+    function setBodyWithCategory() {
+      var urlParts = document.location.href.split('/');
+      var category = urlParts[urlParts.length - 1].toLowerCase();
+      $('body').addClass(category);
+    }
 
-    //$('.parent-categoty').hover(showChilds, hideChilds);
-    //function showChilds(src) {
-    //  $(this).find('.childs-category').show();
-    //}
-    //function hideChilds(src) {
-    //  $(this).find('.childs-category').hide();
-    //}
+    function bindEventsForTouchSupport() {
+      $('body').on('click', function (event) {
+
+        var src = $(event.target || event.srcElement);
+
+        if (src.attr('id') == 'menu-switch')
+          toggleMenu();
+        if (src.attr('id') != 'header' && src.parents('#header').length == 0)
+          hideMenu();
+
+      })
+    }
+
+    bindEvents();
+
+    bindEventsForTouchSupport();
+
+    setBodyWithCategory();
+
+    
   })();
 
 })
